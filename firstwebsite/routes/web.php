@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('home');
@@ -31,3 +32,20 @@ Route::prefix('portfolio')->group(function () {
         return view("organization");
     })->name("organization");
 });
+
+Route::get('/form', function () {
+    return view("form");
+})->name("form");
+
+// POST routes
+Route::post("/formsubmitted", function (Request $request) {
+    $request->validate([
+        'fullname' => 'required|min:3|max:30',
+        'email' => 'required|min:6|email'
+    ]);
+
+    $fullname = $request->input('fullname');
+    $email = $request->input('email');
+
+    return "Form was submitted! full name=$fullname , email=$email";
+})->name("formsubmitted");

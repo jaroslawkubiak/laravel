@@ -15,9 +15,8 @@
   $name = "Jarka";
   ?>
   <h1>Portfolio {{$name}}</h1>
-  <a href='{{route("company")}}'>Company</a><br />
+  <a href='{{route("company")}}'>Company</a>
   <a href='{{route("organization")}}'>Organization</a>
-  <br />
   <br />
   <br />
   <a href='{{route("home")}}'>Home</a>

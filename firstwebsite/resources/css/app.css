@@ -16,4 +16,17 @@ a {
     color: rgb(12, 114, 238);
     font-size: 20px;
     font-weight: bold;
+    display: block;
+}
+
+input {
+    border: 2px solid rgb(34, 35, 34);
+    padding: 4px;
+    display: block;
+    margin: 6px 0;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
 }

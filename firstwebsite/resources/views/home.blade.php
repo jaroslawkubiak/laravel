@@ -13,6 +13,7 @@
 <body>
   <h1>Home</h1>
   <a href='{{route("portfolio")}}'>Portfolio</a>
+  <a href='{{route("form")}}'>Form</a>
 </body>
 
 </html>
