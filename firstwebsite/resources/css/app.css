@@ -30,3 +30,8 @@ label {
     font-weight: bold;
     font-size: 20px;
 }
+
+footer a {
+    padding: 10px;
+    background-color: rgb(242, 216, 22); 
+}

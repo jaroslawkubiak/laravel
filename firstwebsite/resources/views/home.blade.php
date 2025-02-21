@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('/layouts/default')
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  @vite('resources/css/app.css')
-  @vite('resources/js/app.js')
+@section('header')
+<h1>This is a header</h1>
+@endsection
 
-</head>
+@section('maincontent')
+<h2>Home</h2>
+<a href='{{route("portfolio")}}'>Portfolio</a>
+<a href='{{route("contact")}}'>Contact</a>
+<a href='{{route("form")}}'>Form</a>
+<img src="{{asset('images/obi.png')}}" alt="image">
+@endsection
 
-<body>
-  <h1>Home</h1>
-  <a href='{{route("portfolio")}}'>Portfolio</a>
-  <a href='{{route("form")}}'>Form</a>
-</body>
 
-</html>
+@section('footer')
+<h2>this is a footer</h2>
+@endsection
