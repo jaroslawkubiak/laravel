@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(222, 54, 24);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+a {
+    color: rgb(12, 114, 238);
+    font-size: 20px;
+    font-weight: bold;
+}
